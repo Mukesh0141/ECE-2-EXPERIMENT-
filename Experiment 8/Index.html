@@ -1,1 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Selling Items</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for the "Inter" font -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Ensuring the body uses the defined font */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7; /* Light gray background matching the image */
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+
+    <!-- Header Title -->
+    <header class="text-center mb-8 sm:mb-12">
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-800">Best Selling Items</h1>
+    </header>
+
+    <!-- Product Grid Container -->
+    <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <!-- Card 1: HP Laptop -->
+            <div class="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center">
+                <!-- Placeholder Image for Laptop -->
+                <div class="mb-4 w-full h-48 flex justify-center items-center overflow-hidden">
+                    <img src="laptop.jpg"
+                         alt="HP 255 G10 Laptop" 
+                         class="object-cover rounded-lg" 
+                         onerror="this.onerror=null; this.src='https://placehold.co/400x250/BBDDFF/000000?text=Product+Image';"
+                    />
+                </div>
+                
+                <h2 class="text-lg font-semibold text-gray-900 mb-2">HP 255 G10 Laptop (16GB RAM, 512GB SSD, Ryzen 3)</h2>
+                
+                <p class="text-sm text-gray-500 mb-4 flex-grow">A fast and reliable laptop ideal for daily work, browsing, and multitasking.</p>
+                
+                <p class="text-2xl font-bold text-green-700 mb-4">
+                    <span class="text-xl align-top">₹</span>40,000
+                </p>
+                
+                <button class="w-full sm:w-auto px-6 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition duration-150 shadow-md">
+                    Buy Now
+                </button>
+            </div>
+
+            <!-- Card 2: Apple iPhone -->
+            <div class="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center">
+                <!-- Placeholder Image for iPhone -->
+                <div class="mb-4 w-full h-48 flex justify-center items-center overflow-hidden">
+                    <img src="iphone.jpg.jpg"
+                         alt="Apple iPhone 15 - Green" 
+                         class="object-cover rounded-lg h-full" 
+                         onerror="this.onerror=null; this.src='https://placehold.co/200x250/E6F9E6/000000?text=Product+Image';"
+                    />
+                </div>
+
+                <h2 class="text-lg font-semibold text-gray-900 mb-2">Apple iPhone 15 (128GB) - Green</h2>
+                
+                <p class="text-sm text-gray-500 mb-4 flex-grow">Experience smooth performance, stunning photos, and an advanced A16 chip.</p>
+                
+                <p class="text-2xl font-bold text-green-700 mb-4">
+                    <span class="text-xl align-top">₹</span>70,000
+                    
+                </p>
+                
+                <button class="w-full sm:w-auto px-6 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition duration-150 shadow-md">
+                    Buy Now
+                </button>
+            </div>
+
+            <!-- Card 3: LG Microwave Oven -->
+            <div class="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center">
+                <!-- Placeholder Image for Microwave -->
+                <div class="mb-4 w-full h-48 flex justify-center items-center overflow-hidden">
+                    <img src="microven.jpg.jpg"
+                         alt="LG 28 L Convection Microwave Oven" 
+                         class="object-cover rounded-lg" 
+                         onerror="this.onerror=null; this.src='https://placehold.co/400x250/F8E5CC/000000?text=Product+Image';"
+                    />
+                </div>
+
+                <h2 class="text-lg font-semibold text-gray-900 mb-2">LG 28 L Convection Microwave Oven</h2>
+                
+                <p class="text-sm text-gray-500 mb-4 flex-grow">Perfect for baking, grilling, and quick heating with a large 28L capacity.</p>
+                
+                <p class="text-2xl font-bold text-green-700 mb-4">
+                    <span class="text-xl align-top">₹</span>10,000
+                </p>
+                
+                <button class="w-full sm:w-auto px-6 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition duration-150 shadow-md">
+                    Buy Now
+                </button>
+            </div>
+            
+            <!-- Card 4: boAt Earbuds -->
+            <div class="bg-white p-4 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center">
+                <!-- Placeholder Image for Earbuds -->
+                <div class="mb-4 w-full h-48 flex justify-center items-center overflow-hidden">
+                    <img src="earphone.jpg.jpg"
+                         alt="boAt Nirvana Zenith Pro (2025)" 
+                         class="object-cover rounded-lg" 
+                         onerror="this.onerror=null; this.src='https://placehold.co/300x250/D1C4E9/000000?text=Product+Image';"
+                    />
+                </div>
+
+                <h2 class="text-lg font-semibold text-gray-900 mb-2">boAt Nirvana Zenith Pro (2025)</h2>
+                
+                <p class="text-sm text-gray-500 mb-4 flex-grow">Premium wireless earbuds with clear sound and long-lasting battery life.</p>
+                
+                <p class="text-2xl font-bold text-green-700 mb-4">
+                    <span class="text-xl align-top">₹</span>1299
+                </p>
+                
+                <button class="w-full sm:w-auto px-6 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition duration-150 shadow-md">
+                    Buy Now
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
+
 
