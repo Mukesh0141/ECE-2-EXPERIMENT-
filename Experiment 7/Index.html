@@ -1,1 +1,76 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Cards</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Tailwind Configuration for shadow and font -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    // Custom box shadow to mimic the uploaded image's soft shadow
+                    boxShadow: {
+                        'soft': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 4px 10px rgba(0, 0, 0, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+<body>
+
+    <!-- Main Container replicating the overall white/bordered area -->
+    <div class="p-8 border border-gray-300 bg-white shadow-lg w-full max-w-7xl mx-auto rounded-lg md:p-12">
+
+        <!-- Card Grid (Responsive layout for mobile/desktop) -->
+        <div class="flex flex-wrap justify-center gap-6">
+
+            <!-- Card 1: Jeet Kumar (JK) -->
+            <div class="card w-full sm:w-64 p-6 bg-white border border-blue-400 rounded-xl shadow-soft text-center transform hover:scale-105 transition duration-300">
+                <div class="flex justify-center -mt-10 mb-4">
+                    <div class="initials-circle">JK</div>
+                </div>
+                <h2 class="text-xl font-bold text-gray-800 mt-2">Jeet Kumar</h2>
+                <p class="text-sm text-gray-600 font-semibold mt-1">B.Tech - CSE</p>
+                <p class="text-xs text-gray-500 mt-0.5">Roll No: 21CS1007</p>
+                <p class="text-xs text-gray-500">1st Year</p>
+            </div>
+
+            <!-- Card 2: Asha Rani (AR) -->
+            <div class="card w-full sm:w-64 p-6 bg-white border border-blue-400 rounded-xl shadow-soft text-center transform hover:scale-105 transition duration-300">
+                <div class="flex justify-center -mt-10 mb-4">
+                    <div class="initials-circle">AR</div>
+                </div>
+                <h2 class="text-xl font-bold text-gray-800 mt-2">Asha Rani</h2>
+                <p class="text-sm text-gray-600 font-semibold mt-1">B.Tech - IT</p>
+                <p class="text-xs text-gray-500 mt-0.5">Roll No: 21IT1012</p>
+                <p class="text-xs text-gray-500">1st Year</p>
+            </div>
+
+            <!-- Card 3: Rohit Kumar (RK) -->
+            <div class="card w-full sm:w-64 p-6 bg-white border border-blue-400 rounded-xl shadow-soft text-center transform hover:scale-105 transition duration-300">
+                <div class="flex justify-center -mt-10 mb-4">
+                    <div class="initials-circle">RK</div>
+                </div>
+                <h2 class="text-xl font-bold text-gray-800 mt-2">Rohit Kumar</h2>
+                <p class="text-sm text-gray-600 font-semibold mt-1">B.Tech - ECE</p>
+                <p class="text-xs text-gray-500 mt-0.5">Roll No: 21EC1009</p>
+                <p class="text-xs text-gray-500">1st Year</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+
