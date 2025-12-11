@@ -1,1 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Experiment 10</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Navbar Container - Flexbox Parent */
+        .navbar {
+            background-color: #1a1a1a; /* Dark background matching screenshot */
+            color: white;
+            padding: 15px 30px;
+            
+            /* Flexbox Properties as per Theory */
+            display: flex;
+            justify-content: space-between; /* Spacing: Logo - Links - Actions */
+            align-items: center; /* Vertical alignment */
+        }
+
+        /* Logo Styling */
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* Navigation Links (UL) */
+        .nav-links {
+            list-style: none; /* Remove bullet points */
+            display: flex; /* Horizontal layout for links */
+            gap: 25px; /* Space between links */
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #dcdcdc;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links li a:hover {
+            color: #ffffff; /* White on hover */
+        }
+
+        /* Right Side Actions (Cart & Login) */
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-actions a {
+            text-decoration: none;
+            color: white;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .cart-icon {
+            margin-right: 5px;
+        }
+
+        /* Main Content Area */
+        main {
+            padding: 20px 30px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        p {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        /* --- Media Queries for Mobile Responsiveness --- 
+           Matches "Objective 5" and "Theory: Responsive Design" */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column; /* Stack elements vertically */
+                align-items: flex-start;
+                padding: 15px;
+            }
+
+            .nav-links {
+                flex-direction: column; /* Stack links vertically */
+                width: 100%;
+                margin-top: 15px;
+                gap: 10px;
+            }
+
+            .nav-actions {
+                margin-top: 15px;
+                width: 100%;
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">ShopEase</div>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <a href="#">Cart &#128722;</a> <a href="#">Login</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Welcome to ShopEase!</h1>
+        <p>Your one-stop destination for all shopping needs.</p>
+    </main>
+
+</body>
+</html>
 
