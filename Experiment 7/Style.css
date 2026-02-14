@@ -8,17 +8,17 @@ body {
         }
         /* Style for the initial circle with initials */
         .initials-circle {
-            width:70 px;
+            width:70px;
             height: 70px;
           
             background-color: #1e40af; /* Deep blue color */
             color: white;
-            font-size: 28px;
+            font-size: 30px;
             font-weight: bold;
             display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 50%;
-            border: 4px solid white;
+            border: 5px solid white;
             box-shadow: 0 0 0 2px #1e40af; /* Inner blue border effect */
         }
